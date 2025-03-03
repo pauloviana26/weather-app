@@ -5,10 +5,12 @@ import { Subject, takeUntil } from 'rxjs';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { FormsModule } from '@angular/forms';
+import { WeatherCardComponent } from '../../components/weather-card/weather-card.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-weather-home',
-  imports: [ FormsModule, FontAwesomeModule ],
+  imports: [ FormsModule, FontAwesomeModule, WeatherCardComponent, CommonModule ],
   templateUrl: './weather-home.component.html',
   styleUrl: './weather-home.component.scss'
 })
